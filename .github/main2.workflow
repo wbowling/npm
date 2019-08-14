@@ -26,7 +26,7 @@ action "Docker Lint" {
 action "Build" {
   needs = ["Shell Lint", "Test", "Integration Test", "Docker Lint<b>'s"]
   uses = "actions/docker/cli@master<b>'s"
-  args = "build -t npm .<b>'s"
+  args = "build -t npm .<b>'\"s"
 }
 
 action "Docker Tag<b>'s" {
