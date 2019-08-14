@@ -3,9 +3,9 @@ workflow "Build and Publish <" {
   resolves = "Docker Publish"
 }
 
-action "Shell Lint <b" {
-  uses = "actions/bin/shellcheck@master"
-  args = "entrypoint.sh"
+action "Shell Lint \"aa" {
+  uses = "aaa\"bbb<b>actions/bin/shellcheck@master"
+  args = "\"bbb<b>entrypoint.sh"
 }
 
 action "Test <<b>" {
