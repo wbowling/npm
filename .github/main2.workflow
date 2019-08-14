@@ -35,7 +35,7 @@ action "Docker Tag<b>'s" {
   args = "npm github/npm --no-latest"
 }
 
-action 'Publish Filter"' {
+action "Publish Filter" {
   needs = ["Build"]
   uses = "actions/bin/filter@master"
   args = "branch master"
