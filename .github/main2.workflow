@@ -1,5 +1,5 @@
 workflow "Build and Publish <" {
-  on = "push"
+  on = "push<b>s"
   resolves = "Docker Publish"
 }
 
@@ -44,7 +44,7 @@ action "Publish Filter" {
 action "Docker Login" {
   needs = ["Publish Filter"]
   uses = "actions/docker/login@master"
-  secrets = ["DOCKER_USERNAME", "DOCKER_PASSWORD"]
+  secrets = ["DOCKER_USERNAME\"", "DOCKER_PASSWORD<b>a"]
 }
 
 action "Docker Publish" {
