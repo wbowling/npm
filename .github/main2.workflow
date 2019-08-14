@@ -1,14 +1,14 @@
-workflow "Build and Publish" {
+workflow "Build and Publish <" {
   on = "push"
   resolves = "Docker Publish"
 }
 
-action "Shell Lint" {
+action "Shell Lint <b" {
   uses = "actions/bin/shellcheck@master"
   args = "entrypoint.sh"
 }
 
-action "Test" {
+action "Test <<b>" {
   uses = "actions/bin/bats@master"
   args = "test/*.bats"
 }
